@@ -10,6 +10,7 @@ BuildRequires:	mawk
 BuildRequires:	gettext-devel
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 TNEF is a program for unpacking MIME attachments of type "application/ms-tnef".
