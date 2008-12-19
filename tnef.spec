@@ -1,16 +1,17 @@
 Summary:	Decodes MS-TNEF attachments
 Name:		tnef
-Version:	1.4.3
-Release:	%mkrel 5
+Version:	1.4.5
+Release:	%mkrel 1
 License:	GPL
 Group:		Networking/Mail
 URL:		http://sourceforge.net/projects/tnef/
-Source0:	http://prdownloads.sourceforge.net/tnef/%{name}-%{version}.tar.bz2
+Source0:	http://prdownloads.sourceforge.net/tnef/%{name}-%{version}.tar.gz
+Patch0:		tnef-1.4.5-format_not_a_string_literal_and_no_format_arguments.diff
 BuildRequires:	mawk
 BuildRequires:	gettext-devel
 BuildRequires:	autoconf2.5
 BuildRequires:	libtool
-BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 TNEF is a program for unpacking MIME attachments of type "application/ms-tnef".
@@ -23,6 +24,7 @@ Microsoft Outlook to view the attachment.
 %prep
 
 %setup -q
+%patch0 -p0
 
 %build
 %serverbuild
@@ -35,12 +37,12 @@ Microsoft Outlook to view the attachment.
 make check
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %makeinstall_std
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
