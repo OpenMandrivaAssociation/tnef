@@ -1,7 +1,7 @@
 Summary:	Decodes MS-TNEF attachments
 Name:		tnef
-Version:	1.4.7
-Release:	%mkrel 2
+Version:	1.4.8
+Release:	%mkrel 1
 License:	GPL
 Group:		Networking/Mail
 URL:		http://sourceforge.net/projects/tnef/
