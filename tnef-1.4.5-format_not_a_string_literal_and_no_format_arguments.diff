@@ -1,0 +1,11 @@
+--- src/main.c	2008-03-28 00:44:02.000000000 +0100
++++ src/main.c.oden	2008-12-19 15:50:48.000000000 +0100
+@@ -235,7 +235,7 @@ parse_cmdline (int argc, char **argv,
+ 
+         case 'V':
+             fprintf (stderr, "%s\n", PACKAGE_STRING);
+-            fprintf (stderr, COPYRIGHTS);
++            fprintf (stderr, "%s", COPYRIGHTS);
+             fprintf (stderr, "\n");
+             fprintf (stderr, NO_WARRANTY, PACKAGE_NAME, PACKAGE_NAME);
+             fprintf (stderr, "\n");
