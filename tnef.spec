@@ -1,6 +1,6 @@
 Summary:	Decodes MS-TNEF attachments
 Name:		tnef
-Version:	1.4.17
+Version:	1.4.18
 Release:	1
 License:	GPL
 Group:		Networking/Mail
