@@ -4,7 +4,7 @@ Version:	1.4.18
 Release:	2
 License:	GPL
 Group:		Networking/Mail
-URL:		http://sourceforge.net/projects/tnef/
+URL:		https://sourceforge.net/projects/tnef/
 Source0:	https://github.com/verdammelt/tnef/archive/%{version}.tar.gz
 BuildRequires:	mawk
 BuildRequires:	gettext-devel
