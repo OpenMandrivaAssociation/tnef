@@ -6,6 +6,10 @@ License:	GPL
 Group:		Networking/Mail
 URL:		https://sourceforge.net/projects/tnef/
 Source0:	https://github.com/verdammelt/tnef/archive/%{version}.tar.gz
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	mawk
 BuildRequires:	gettext-devel
 BuildRequires:	autoconf2.5
